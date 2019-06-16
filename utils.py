@@ -20,7 +20,8 @@ class WiFi:
     Based on the example in the micropython documentation.
     """
 
-    def wifi_connect(self, essid, password):
+    @staticmethod
+    def wifi_connect(essid, password):
         wlan = network.WLAN(network.STA_IF)
         wlan.active(True)
         if not wlan.isconnected():
@@ -38,7 +39,8 @@ class WiFi:
             print("WiFi already connected, network config: %s" % repr(wlan.ifconfig()))
         return wlan
 
-    def wifi_disconnect(self):
+    @staticmethod
+    def wifi_disconnect():
         # Disconnect from the current network. You may have to
         # do this explicitly if you switch networks, as the params are stored
         # in non-volatile memory.
@@ -49,7 +51,8 @@ class WiFi:
         else:
             print("Wifi not connected.")
 
-    def disable_wifi_ap(self):
+    @staticmethod
+    def disable_wifi_ap():
         # Disable the built-in access point.
         wlan = network.WLAN(network.AP_IF)
         wlan.active(False)

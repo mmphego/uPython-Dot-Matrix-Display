@@ -1,0 +1,9 @@
+{
+    "wifi_config": {
+        "ssid": ["GetUrOwnWiFi", "KATCPT"],
+        "password": ["Livhu300312", "katCPT#12"]
+    },
+    "MQTT_config": {
+        "Host": "192.168.1.11"
+    },
+}
