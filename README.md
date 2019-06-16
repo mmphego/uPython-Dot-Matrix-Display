@@ -9,6 +9,15 @@
 
 ## Circuit Diagram
 
+Wemos D1 Mini/LOLin NodeMCU v3    | max7219 8x8 LED Matrix
+---------------- | ----------------------
+5V               | VCC
+GND              | GND
+D7 MOSI (GPIO13) | DIN
+D8 CS (GPIO15)   | CS
+D5 SCK (GPIO14)  | CLK
+
+
 ## Setup NodeMCU & Tools
 
 Read the [docs](https://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html)
